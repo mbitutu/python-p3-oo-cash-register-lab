@@ -52,7 +52,7 @@ class TestCashRegister:
         assert(self.cash_register.total == 9.5)
         self.cash_register.add_item("Justin's Peanut Butter Cups", 2.50, 2)
         assert(self.cash_register.total == 14.5)
-        self.reset_register_totals()
+        self.reset_register_totals(0)
 
     def test_apply_discount(self):
         '''applies the discount to the total price.'''
